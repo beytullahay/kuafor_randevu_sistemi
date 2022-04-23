@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kuafor_randevu_sistemi/constants.dart';
 
 class MKayitOlSayfasi extends StatefulWidget {
   const MKayitOlSayfasi({Key? key}) : super(key: key);
@@ -13,31 +14,25 @@ class _MKayitOlSayfasiState extends State<MKayitOlSayfasi> {
     return MaterialApp(
       home: SafeArea(
           child: Scaffold(
+        backgroundColor: Colors.blue[200],
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              CircleAvatar(
-                radius: 90.0,
-                child: Text(
-                  'LOGO',
-                  style: TextStyle(color: Colors.white),
-                ),
-                backgroundColor: Colors.blueAccent,
-              ),
+              logom,
               SizedBox(height: 30),
               TextField(
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 25),
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   hintText: 'İsim Soyisim Giriniz',
                   prefixIcon: Icon(Icons.people),
                   border: OutlineInputBorder(
                       borderSide: BorderSide(width: 1, color: Colors.black),
                       borderRadius:
-                          const BorderRadius.all(const Radius.circular(30.0))),
+                          const BorderRadius.all(const Radius.circular(10.0))),
                 ),
               ),
               SizedBox(height: 10),
@@ -45,13 +40,13 @@ class _MKayitOlSayfasiState extends State<MKayitOlSayfasi> {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 25),
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   hintText: ' 05** *** ** **',
                   prefixIcon: Icon(Icons.phone),
                   border: OutlineInputBorder(
                       borderSide: BorderSide(width: 1, color: Colors.black),
                       borderRadius:
-                          const BorderRadius.all(const Radius.circular(30.0))),
+                          const BorderRadius.all(const Radius.circular(10.0))),
                 ),
                 keyboardType: TextInputType.phone,
               ),
@@ -61,13 +56,13 @@ class _MKayitOlSayfasiState extends State<MKayitOlSayfasi> {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 25),
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   hintText: 'Şifre Giriniz',
                   prefixIcon: Icon(Icons.password),
                   border: OutlineInputBorder(
                       borderSide: BorderSide(width: 1, color: Colors.black),
                       borderRadius:
-                          const BorderRadius.all(const Radius.circular(30.0))),
+                          const BorderRadius.all(const Radius.circular(10.0))),
                 ),
               ),
               SizedBox(height: 20),

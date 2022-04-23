@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kuafor_randevu_sistemi/constants.dart';
 
 import 'aktif_randevularim.dart';
 import 'favori_kuaforlerim.dart';
@@ -15,16 +16,13 @@ class _musteriPageState extends State<musteriPage> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+      backgroundColor: Colors.blue[200],
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              radius: 50.0,
-              backgroundColor: Colors.blueAccent,
-              backgroundImage: AssetImage('assets/profil.png'),
-            ),
+            avatar1,
             SizedBox(
               height: 20,
             ),

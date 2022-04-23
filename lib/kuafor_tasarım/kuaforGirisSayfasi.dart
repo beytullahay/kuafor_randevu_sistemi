@@ -1,47 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:kuafor_randevu_sistemi/musteriKayitOlSayfasi.dart';
+import 'package:kuafor_randevu_sistemi/constants.dart';
+import 'package:kuafor_randevu_sistemi/kuafor_tasar%C4%B1m/kuaforKayitOlSayfasi.dart';
 
-import 'musteri_tasarim/musteri_page.dart';
+import 'kuafor_home_page.dart';
 
-class musteriGirisSayfasi extends StatefulWidget {
-  const musteriGirisSayfasi({Key? key}) : super(key: key);
+class kuaforGirisSayfasi extends StatefulWidget {
+  const kuaforGirisSayfasi({Key? key}) : super(key: key);
 
   @override
-  State<musteriGirisSayfasi> createState() => _musteriGirisSayfasiState();
+  State<kuaforGirisSayfasi> createState() => _kuaforGirisSayfasiState();
 }
 
-class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
+class _kuaforGirisSayfasiState extends State<kuaforGirisSayfasi> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SafeArea(
           child: Scaffold(
+        backgroundColor: Colors.blue[200],
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              CircleAvatar(
-                radius: 90.0,
-                child: Text(
-                  'LOGO',
-                  style: TextStyle(color: Colors.white),
-                ),
-                backgroundColor: Colors.blueAccent,
-              ),
+              logom,
               SizedBox(height: 20),
               TextField(
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 25),
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   hintText: ' 05** *** ** **',
                   prefixIcon: Icon(Icons.phone),
                   border: OutlineInputBorder(
                       borderSide:
                           BorderSide(width: 1, color: Colors.blueAccent),
                       borderRadius:
-                          const BorderRadius.all(const Radius.circular(30.0))),
+                          const BorderRadius.all(const Radius.circular(10.0))),
                 ),
                 keyboardType: TextInputType.phone,
               ),
@@ -51,13 +46,13 @@ class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 25),
                 decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   hintText: 'Şifre Giriniz',
-                  prefixIcon: Icon(Icons.password),
+                  prefixIcon: Icon(Icons.lock),
                   border: OutlineInputBorder(
                       borderSide: BorderSide(width: 1, color: Colors.black),
                       borderRadius:
-                          const BorderRadius.all(const Radius.circular(30.0))),
+                          const BorderRadius.all(const Radius.circular(10.0))),
                 ),
               ),
               SizedBox(height: 20),
@@ -67,12 +62,12 @@ class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
                   primary: Colors.blueAccent, // background
                   onPrimary: Colors.white, // foreground
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                 ),
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => musteriPage()),
+                    MaterialPageRoute(builder: (context) => kuaforHomePage()),
                   );
                 },
                 child: Text('GİRİŞ YAP'),
@@ -83,19 +78,23 @@ class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => musteriGirisSayfasi()),
+                          builder: (context) => kuaforGirisSayfasi()),
                     );
                   },
-                  child: Text('Şifremi Unuttum')),
+                  child: Text(
+                    'Şifremi Unuttum',
+                    style: TextStyle(color: Colors.red),
+                  )),
               TextButton(
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => MKayitOlSayfasi()),
+                          builder: (context) => KKayitOlSayfasi()),
                     );
                   },
-                  child: Text('Kayıt Ol '))
+                  child:
+                      Text('Kayıt Ol ', style: TextStyle(color: Colors.black)))
             ]),
           ),
         ),

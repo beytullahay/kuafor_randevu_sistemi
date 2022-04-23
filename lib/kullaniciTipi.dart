@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kuafor_randevu_sistemi/kuaforGirisSayfasi.dart';
-import 'package:kuafor_randevu_sistemi/musteriGirisSayfasi.dart';
+import 'package:kuafor_randevu_sistemi/constants.dart';
+import 'package:kuafor_randevu_sistemi/kuafor_tasar%C4%B1m/kuaforGirisSayfasi.dart';
+import 'package:kuafor_randevu_sistemi/musteri_tasarim/musteriGirisSayfasi.dart';
 
 class kullaniciTipi extends StatelessWidget {
   const kullaniciTipi({Key? key}) : super(key: key);
@@ -10,18 +11,12 @@ class kullaniciTipi extends StatelessWidget {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.blue[200],
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CircleAvatar(
-                  radius: 90.0,
-                  child: Text(
-                    'LOGO',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  backgroundColor: Colors.blueAccent,
-                ),
+                logom,
                 SizedBox(height: 30),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -29,7 +24,7 @@ class kullaniciTipi extends StatelessWidget {
                     primary: Colors.blueAccent, // background
                     onPrimary: Colors.white, // foreground
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30)),
+                        borderRadius: BorderRadius.circular(10.0)),
                   ),
                   onPressed: () {
                     Navigator.push(
@@ -47,7 +42,7 @@ class kullaniciTipi extends StatelessWidget {
                     primary: Colors.blueAccent, // background
                     onPrimary: Colors.white, // foreground
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30)),
+                        borderRadius: BorderRadius.circular(10.0)),
                   ),
                   onPressed: () {
                     Navigator.push(

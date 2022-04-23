@@ -16,9 +16,10 @@ class _kuaforHomePageState extends State<kuaforHomePage> {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.blue[200],
           body: Center(
               child: Padding(
-            padding: const EdgeInsets.all(25.0),
+            padding: const EdgeInsets.fromLTRB(20, 50, 25, 50),
             child: Column(
               children: [
                 Expanded(
@@ -28,7 +29,6 @@ class _kuaforHomePageState extends State<kuaforHomePage> {
                     style: TextStyle(fontSize: 30),
                   ),
                 ),
-                SizedBox(height: 20),
                 Expanded(
                   flex: 6,
                   child: Row(

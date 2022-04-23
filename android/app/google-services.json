@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "782060078987",
+    "project_id": "kuaforrandevusistemi-cd848",
+    "storage_bucket": "kuaforrandevusistemi-cd848.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782060078987:android:4728a8732be72b09eb118e",
+        "android_client_info": {
+          "package_name": "com.example.kuafor_randevu_sistemi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782060078987-uqdmh8092j3ed7jdv30vq0trs801veq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtJ1BsYSJFxRac6msKEaHV1KE4Sjcxaf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782060078987-uqdmh8092j3ed7jdv30vq0trs801veq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

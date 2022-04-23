@@ -14,6 +14,7 @@ class _favoriKuaforlerimState extends State<favoriKuaforlerim> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+            backgroundColor: Colors.blue[200],
             appBar: AppBar(
               backgroundColor: Colors.blueAccent,
               centerTitle: true,
@@ -41,7 +42,10 @@ class _favoriKuaforlerimState extends State<favoriKuaforlerim> {
                         backgroundColor: Colors.blueAccent,
                         backgroundImage: AssetImage('assets/profil.png'),
                       ),
-                      title: Text('Yıldız Kuaför'),
+                      title: Text(
+                        'Yıldız Kuaför',
+                        style: TextStyle(color: Colors.white),
+                      ),
                       subtitle: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -76,7 +80,10 @@ class _favoriKuaforlerimState extends State<favoriKuaforlerim> {
                         backgroundColor: Colors.blueAccent,
                         backgroundImage: AssetImage('assets/profil.png'),
                       ),
-                      title: Text('Hasan Kuaför'),
+                      title: Text(
+                        'Hasan Kuaför',
+                        style: TextStyle(color: Colors.white),
+                      ),
                       subtitle: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[

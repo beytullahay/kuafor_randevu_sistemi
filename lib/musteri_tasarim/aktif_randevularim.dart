@@ -12,6 +12,7 @@ class _aktifRandevularimState extends State<aktifRandevularim> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+            backgroundColor: Colors.blue[200],
             appBar: AppBar(
               backgroundColor: Colors.blueAccent,
               centerTitle: true,
@@ -40,14 +41,27 @@ class _aktifRandevularimState extends State<aktifRandevularim> {
                           backgroundColor: Colors.blueAccent,
                           backgroundImage: AssetImage('assets/profil.png'),
                         ),
-                        title: Text('Yıldız Kuaför'),
+                        title: Text(
+                          'Yıldız Kuaför',
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 12, 242, 24)),
+                        ),
                         isThreeLine: true,
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text('23/04/2022'),
-                            Text('14:00 - 14:30'),
-                            Text('Kartal / İstanbul'),
+                            Text(
+                              '23/04/2022',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              '14:00 - 14:30',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              'Kartal / İstanbul',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ],
                         ),
                       ),
@@ -70,14 +84,27 @@ class _aktifRandevularimState extends State<aktifRandevularim> {
                           backgroundColor: Colors.blueAccent,
                           backgroundImage: AssetImage('assets/profil.png'),
                         ),
-                        title: Text('Şahin Kuaför'),
+                        title: Text(
+                          'Şahin Kuaför',
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 12, 242, 24)),
+                        ),
                         isThreeLine: true,
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text('23/04/2022'),
-                            Text('17:00 - 17:30'),
-                            Text('Kadiköy / İstanbul'),
+                            Text(
+                              '23/04/2022',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              '17:00 - 17:30',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              'Kadiköy / İstanbul',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ],
                         ),
                       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kuafor_randevu_sistemi/constants.dart';
 
 class KKayitOlSayfasi extends StatefulWidget {
   const KKayitOlSayfasi({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
     return MaterialApp(
       home: SafeArea(
           child: Scaffold(
+        backgroundColor: Colors.blue[200],
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -21,14 +23,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 20),
-                    CircleAvatar(
-                      radius: 70.0,
-                      child: Text(
-                        'LOGO',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      backgroundColor: Colors.blueAccent,
-                    ),
+                    logom,
                     SizedBox(height: 20),
                     TextField(
                       textAlign: TextAlign.center,
@@ -42,7 +37,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -58,7 +53,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                       keyboardType: TextInputType.phone,
                     ),
@@ -76,7 +71,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -92,7 +87,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -108,7 +103,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -124,7 +119,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -140,7 +135,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -156,7 +151,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 10),
@@ -173,7 +168,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                             borderSide:
                                 BorderSide(width: 1, color: Colors.black),
                             borderRadius: const BorderRadius.all(
-                                const Radius.circular(30.0))),
+                                const Radius.circular(10.0))),
                       ),
                     ),
                     SizedBox(height: 20),
