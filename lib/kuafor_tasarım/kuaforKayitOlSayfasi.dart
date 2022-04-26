@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kuafor_randevu_sistemi/constants.dart';
 
 class KKayitOlSayfasi extends StatefulWidget {
-  const KKayitOlSayfasi({Key? key}) : super(key: key);
+  const KKayitOlSayfasi({Key key}) : super(key: key);
 
   @override
   State<KKayitOlSayfasi> createState() => _KKayitOlSayfasiState();
@@ -11,10 +11,8 @@ class KKayitOlSayfasi extends StatefulWidget {
 class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SafeArea(
-          child: Scaffold(
-        backgroundColor: Colors.blue[200],
+    return SafeArea(
+      child: Scaffold(
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -194,7 +192,7 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
             ),
           ),
         ),
-      )),
+      ),
     );
   }
 }

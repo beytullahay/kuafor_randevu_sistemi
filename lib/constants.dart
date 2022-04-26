@@ -16,3 +16,8 @@ dynamic avatar1 = const CircleAvatar(
   backgroundColor: Colors.blueAccent,
   backgroundImage: AssetImage('assets/profil.png'),
 );
+
+dynamic avatar2 = const CircleAvatar(
+  backgroundColor: Colors.blueAccent,
+  backgroundImage: AssetImage('assets/profil.png'),
+);

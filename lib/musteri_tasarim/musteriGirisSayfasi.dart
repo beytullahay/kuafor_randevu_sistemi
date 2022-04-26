@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:kuafor_randevu_sistemi/constants.dart';
 import 'package:kuafor_randevu_sistemi/musteri_tasarim/musteriKayitOlSayfasi.dart';
 
-import 'musteri_page.dart';
+import 'musteri_home_page.dart';
 
 class musteriGirisSayfasi extends StatefulWidget {
-  const musteriGirisSayfasi({Key? key}) : super(key: key);
+  const musteriGirisSayfasi({Key key}) : super(key: key);
 
   @override
   State<musteriGirisSayfasi> createState() => _musteriGirisSayfasiState();
@@ -14,10 +14,8 @@ class musteriGirisSayfasi extends StatefulWidget {
 class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SafeArea(
-          child: Scaffold(
-        backgroundColor: Colors.blue[200],
+    return SafeArea(
+      child: Scaffold(
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -59,8 +57,6 @@ class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   fixedSize: const Size(200, 50),
-                  primary: Colors.blueAccent, // background
-                  onPrimary: Colors.white, // foreground
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                 ),
@@ -98,7 +94,7 @@ class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
             ]),
           ),
         ),
-      )),
+      ),
     );
   }
 }

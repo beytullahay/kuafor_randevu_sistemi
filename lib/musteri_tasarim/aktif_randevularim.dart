@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class aktifRandevularim extends StatefulWidget {
-  const aktifRandevularim({Key? key}) : super(key: key);
+  const aktifRandevularim({Key key}) : super(key: key);
 
   @override
   State<aktifRandevularim> createState() => _aktifRandevularimState();
@@ -12,7 +12,6 @@ class _aktifRandevularimState extends State<aktifRandevularim> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            backgroundColor: Colors.blue[200],
             appBar: AppBar(
               backgroundColor: Colors.blueAccent,
               centerTitle: true,

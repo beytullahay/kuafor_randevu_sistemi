@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class favoriKuaforlerim extends StatefulWidget {
-  const favoriKuaforlerim({Key? key}) : super(key: key);
+  const favoriKuaforlerim({Key key}) : super(key: key);
 
   @override
   State<favoriKuaforlerim> createState() => _favoriKuaforlerimState();
@@ -14,7 +14,6 @@ class _favoriKuaforlerimState extends State<favoriKuaforlerim> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            backgroundColor: Colors.blue[200],
             appBar: AppBar(
               backgroundColor: Colors.blueAccent,
               centerTitle: true,

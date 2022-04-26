@@ -5,7 +5,7 @@ import 'package:kuafor_randevu_sistemi/kuafor_tasar%C4%B1m/kuaforKayitOlSayfasi.
 import 'kuafor_home_page.dart';
 
 class kuaforGirisSayfasi extends StatefulWidget {
-  const kuaforGirisSayfasi({Key? key}) : super(key: key);
+  const kuaforGirisSayfasi({Key key}) : super(key: key);
 
   @override
   State<kuaforGirisSayfasi> createState() => _kuaforGirisSayfasiState();
@@ -14,10 +14,8 @@ class kuaforGirisSayfasi extends StatefulWidget {
 class _kuaforGirisSayfasiState extends State<kuaforGirisSayfasi> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: SafeArea(
-          child: Scaffold(
-        backgroundColor: Colors.blue[200],
+    return SafeArea(
+      child: Scaffold(
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -98,7 +96,7 @@ class _kuaforGirisSayfasiState extends State<kuaforGirisSayfasi> {
             ]),
           ),
         ),
-      )),
+      ),
     );
   }
 }

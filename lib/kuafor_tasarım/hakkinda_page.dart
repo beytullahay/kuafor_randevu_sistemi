@@ -2,12 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class hakkindaPage extends StatelessWidget {
-  const hakkindaPage({Key? key}) : super(key: key);
+  const hakkindaPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+      appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            "HAKKINDA",
+          )),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(15, 40, 15, 15),
         child: Center(
@@ -28,7 +33,8 @@ class hakkindaPage extends StatelessWidget {
                 maxLines: 10,
                 minLines: 1,
                 style: TextStyle(fontSize: 20),
-              )
+              ),
+              ElevatedButton(onPressed: () {}, child: Text("Güncelle")),
             ],
           ),
         ),
