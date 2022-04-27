@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class hakkindaPage extends StatelessWidget {
-  const hakkindaPage({Key key}) : super(key: key);
+  TextEditingController text1 = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +26,7 @@ class hakkindaPage extends StatelessWidget {
               ),
               SizedBox(height: 20.0),
               TextField(
+                controller: text1,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   contentPadding: EdgeInsets.symmetric(vertical: 100),

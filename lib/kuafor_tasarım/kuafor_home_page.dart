@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kuafor_randevu_sistemi/kuafor_tasar%C4%B1m/calisma_saatleri.dart';
 import 'package:kuafor_randevu_sistemi/kuafor_tasar%C4%B1m/konum_page.dart';
+import 'package:kuafor_randevu_sistemi/kuafor_tasar%C4%B1m/randevular.dart';
 import 'package:kuafor_randevu_sistemi/settings.dart';
 
 import 'hakkinda_page.dart';
@@ -77,7 +79,13 @@ class _kuaforHomePageState extends State<kuaforHomePage> {
                         style: ElevatedButton.styleFrom(
                           fixedSize: const Size(200, 200),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => randevularPage()),
+                          );
+                        },
                         child: Text('RANDEVULAR'),
                       ),
                     ),
@@ -112,7 +120,13 @@ class _kuaforHomePageState extends State<kuaforHomePage> {
                         style: ElevatedButton.styleFrom(
                           fixedSize: const Size(200, 200),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => calismaSaatleri()),
+                          );
+                        },
                         child: Text('ÇALIŞMA SAATLERİ'),
                       ),
                     ),

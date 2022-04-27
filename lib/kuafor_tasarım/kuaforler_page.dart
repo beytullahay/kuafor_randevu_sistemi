@@ -10,93 +10,60 @@ class kuaforlerPage extends StatefulWidget {
 }
 
 class _kuaforlerPageState extends State<kuaforlerPage> {
-  Future<void> _showMyDialog() async {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: false, // user must tap button!
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('AlertDialog Title'),
-          content: SingleChildScrollView(
-            child: ListBody(
-              children: const <Widget>[
-                Text('This is a demo alert dialog.'),
-                Text('Would you like to approve of this message?'),
-              ],
-            ),
-          ),
-          actions: <Widget>[
-            TextButton(
-              child: const Text('Approve'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(title: Text("KUAFÖRLER")),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Center(
+      child: Scaffold(
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        appBar: AppBar(title: Text("KUAFÖRLER")),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Center(
             child: Column(
-          children: [
-            Card(
-              color: Theme.of(context).appBarTheme.backgroundColor,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: Colors.blueAccent,
-                      backgroundImage: AssetImage('assets/profil.png'),
-                    ),
-                    title: Text('Hakan Yıldırım'),
-                    subtitle: Text('35'),
-                    trailing:
-                        IconButton(onPressed: null, icon: Icon(Icons.cancel)),
-                  )
-                ],
-              ),
+              children: [
+                ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    shrinkWrap: true,
+                    itemCount: 5,
+                    itemBuilder: (context, index) => kuaforCards()),
+                SizedBox(height: 10.0),
+              ],
             ),
-            SizedBox(height: 10.0),
-            Card(
-              color: Theme.of(context).appBarTheme.backgroundColor,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: Colors.blueAccent,
-                      backgroundImage: AssetImage('assets/profil.png'),
-                    ),
-                    title: Text('Metin Yılmaz'),
-                    subtitle: Text('26'),
-                    trailing:
-                        IconButton(onPressed: null, icon: Icon(Icons.cancel)),
-                  )
-                ],
-              ),
-            ),
-            FloatingActionButton(
-              onPressed: () {
-                showModalBottomSheet(
-                    context: context,
-                    builder: (context) => bottomSheetContainer());
-              },
-              child: Icon(Icons.add),
-            )
-          ],
-        )),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+          onPressed: () {
+            showModalBottomSheet(
+                context: context, builder: (context) => bottomSheetContainer());
+          },
+          child: Icon(Icons.add),
+        ),
       ),
-    ));
+    );
+  }
+}
+
+class kuaforCards extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      color: Theme.of(context).appBarTheme.backgroundColor,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          const ListTile(
+            leading: CircleAvatar(
+              backgroundColor: Colors.blueAccent,
+              backgroundImage: AssetImage('assets/profil.png'),
+            ),
+            title: Text('Metin Yılmaz'),
+            subtitle: Text('26'),
+            trailing: IconButton(onPressed: null, icon: Icon(Icons.cancel)),
+          )
+        ],
+      ),
+    );
   }
 }
 

@@ -26,6 +26,7 @@ class _favoriKuaforlerimState extends State<favoriKuaforlerim> {
             ),
             body: Column(
               children: [
+                SizedBox(height: 25.0),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Card(
