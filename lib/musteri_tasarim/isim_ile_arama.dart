@@ -21,8 +21,9 @@ class _isimIleAramaState extends State<isimIleArama> {
                   children: [
                     TextField(
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 20),
                       decoration: InputDecoration(
+                        labelText: 'İL İSMİ GİRİNİZ',
                         contentPadding:
                             const EdgeInsets.symmetric(vertical: 10.0),
                         hintText: 'İL İSMİ GİRİNİZ',
@@ -34,11 +35,12 @@ class _isimIleAramaState extends State<isimIleArama> {
                                 const Radius.circular(10.0))),
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 15),
                     TextField(
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 20),
                       decoration: InputDecoration(
+                        labelText: 'İLÇE İSMİ GİRİNİZ',
                         contentPadding:
                             const EdgeInsets.symmetric(vertical: 10.0),
                         hintText: 'İLÇE İSMİ GİRİNİZ',
@@ -50,11 +52,12 @@ class _isimIleAramaState extends State<isimIleArama> {
                                 const Radius.circular(10.0))),
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 15),
                     TextField(
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 20),
                       decoration: InputDecoration(
+                        labelText: 'MAHALLE İSMİ GİRİNİZ',
                         contentPadding:
                             const EdgeInsets.symmetric(vertical: 10.0),
                         hintText: 'MAHALLE İSMİ GİRİNİZ',

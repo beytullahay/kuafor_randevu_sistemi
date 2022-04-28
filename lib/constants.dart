@@ -11,6 +11,11 @@ Image logom = const Image(
   fit: BoxFit.cover,
 );
 
+Image logom2 = const Image(
+  image: AssetImage("assets/appLogoGreen.png"),
+  fit: BoxFit.cover,
+);
+
 dynamic avatar1 = const CircleAvatar(
   radius: 50.0,
   backgroundColor: Colors.blueAccent,

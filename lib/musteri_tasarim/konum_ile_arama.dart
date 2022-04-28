@@ -14,7 +14,7 @@ class _konumIleAramaState extends State<konumIleArama> {
               AppBar(centerTitle: true, title: Text("KONUM İLE KUAFÖR ARAMA")),
           body: Center(
             child: Padding(
-              padding: const EdgeInsets.all(25.0),
+              padding: const EdgeInsets.fromLTRB(40, 50, 40, 50),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -23,6 +23,7 @@ class _konumIleAramaState extends State<konumIleArama> {
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 25),
                       decoration: InputDecoration(
+                        labelText: 'İL',
                         contentPadding:
                             const EdgeInsets.symmetric(vertical: 10.0),
                         hintText: 'İL',
@@ -34,11 +35,12 @@ class _konumIleAramaState extends State<konumIleArama> {
                                 const Radius.circular(10.0))),
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 15),
                     TextField(
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 25),
                       decoration: InputDecoration(
+                        labelText: 'İLÇE',
                         contentPadding:
                             const EdgeInsets.symmetric(vertical: 10.0),
                         hintText: 'İLÇE',
@@ -50,11 +52,12 @@ class _konumIleAramaState extends State<konumIleArama> {
                                 const Radius.circular(10.0))),
                       ),
                     ),
-                    SizedBox(height: 10),
+                    SizedBox(height: 15),
                     TextField(
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 20),
                       decoration: InputDecoration(
+                        labelText: 'MAHALLE',
                         contentPadding:
                             const EdgeInsets.symmetric(vertical: 10.0),
                         hintText: 'MAHALLE',

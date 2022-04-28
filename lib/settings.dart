@@ -33,7 +33,7 @@ class _SettingsPageState extends State<SettingsPage> {
             setState(() {
               _value = value;
 
-              /// butona basılınca provider ilede yayınlasın yoksa renk değişmez
+              /// butona basılınca provider ile yayınlasın yoksa renk değişmez
               Provider.of<ColorThemeData>(context, listen: false)
                   .SwitchTheme(value);
             });

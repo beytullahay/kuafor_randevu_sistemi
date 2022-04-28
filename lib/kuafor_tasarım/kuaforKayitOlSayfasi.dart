@@ -13,6 +13,10 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("KAYIT OL"),
+        ),
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),

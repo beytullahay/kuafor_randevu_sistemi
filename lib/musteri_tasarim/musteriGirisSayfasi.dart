@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kuafor_randevu_sistemi/constants.dart';
 import 'package:kuafor_randevu_sistemi/musteri_tasarim/musteriKayitOlSayfasi.dart';
+import 'package:kuafor_randevu_sistemi/musteri_tasarim/sifremi_unuttum_page.dart';
 
 import 'musteri_home_page.dart';
 
@@ -16,6 +17,10 @@ class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("MÜŞTERİ GİRİŞİ"),
+        ),
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -74,7 +79,7 @@ class _musteriGirisSayfasiState extends State<musteriGirisSayfasi> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => musteriGirisSayfasi()),
+                          builder: (context) => sifremiUnuttumPage()),
                     );
                   },
                   child: Text(

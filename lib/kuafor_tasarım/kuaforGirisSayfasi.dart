@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kuafor_randevu_sistemi/constants.dart';
 import 'package:kuafor_randevu_sistemi/kuafor_tasar%C4%B1m/kuaforKayitOlSayfasi.dart';
+import 'package:kuafor_randevu_sistemi/musteri_tasarim/sifremi_unuttum_page.dart';
 
 import 'kuafor_home_page.dart';
 
@@ -16,6 +17,10 @@ class _kuaforGirisSayfasiState extends State<kuaforGirisSayfasi> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("KUAFÖR GİRİŞİ"),
+        ),
         body: Center(
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -76,7 +81,7 @@ class _kuaforGirisSayfasiState extends State<kuaforGirisSayfasi> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => kuaforGirisSayfasi()),
+                          builder: (context) => sifremiUnuttumPage()),
                     );
                   },
                   child: Text(
