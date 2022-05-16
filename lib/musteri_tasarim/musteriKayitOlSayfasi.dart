@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kuafor_randevu_sistemi/constants.dart';
 
 class MKayitOlSayfasi extends StatefulWidget {
   const MKayitOlSayfasi({Key key}) : super(key: key);
@@ -22,7 +21,12 @@ class _MKayitOlSayfasiState extends State<MKayitOlSayfasi> {
             padding: EdgeInsets.symmetric(horizontal: 30.0),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              logom,
+              const Image(
+                height: 250,
+                width: 250,
+                image: AssetImage("assets/appLogo.jpg"),
+                fit: BoxFit.cover,
+              ),
               SizedBox(height: 30),
               TextField(
                 textAlign: TextAlign.center,
@@ -31,6 +35,20 @@ class _MKayitOlSayfasiState extends State<MKayitOlSayfasi> {
                   contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   hintText: 'İsim Soyisim Giriniz',
                   prefixIcon: Icon(Icons.people),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(width: 1, color: Colors.black),
+                      borderRadius:
+                          const BorderRadius.all(const Radius.circular(10.0))),
+                ),
+              ),
+              SizedBox(height: 10),
+              TextField(
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 25),
+                decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
+                  hintText: 'Mail Adresi Giriniz',
+                  prefixIcon: Icon(Icons.mail),
                   border: OutlineInputBorder(
                       borderSide: BorderSide(width: 1, color: Colors.black),
                       borderRadius:
@@ -60,6 +78,21 @@ class _MKayitOlSayfasiState extends State<MKayitOlSayfasi> {
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                   hintText: 'Şifre Giriniz',
+                  prefixIcon: Icon(Icons.password),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(width: 1, color: Colors.black),
+                      borderRadius:
+                          const BorderRadius.all(const Radius.circular(10.0))),
+                ),
+              ),
+              SizedBox(height: 10),
+              TextField(
+                obscureText: true,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 25),
+                decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
+                  hintText: 'Şifreyi Doğrulayınız',
                   prefixIcon: Icon(Icons.password),
                   border: OutlineInputBorder(
                       borderSide: BorderSide(width: 1, color: Colors.black),

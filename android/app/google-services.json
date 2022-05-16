@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "782060078987-oq3h70s5ak0jsq13hkkf7g3muj824gk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kuafor_randevu_sistemi",
+            "certificate_hash": "546de319618402b3f2d99aedb5be4586c07b0233"
+          }
+        },
+        {
           "client_id": "782060078987-uqdmh8092j3ed7jdv30vq0trs801veq3.apps.googleusercontent.com",
           "client_type": 3
         }

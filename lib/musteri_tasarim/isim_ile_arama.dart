@@ -23,44 +23,10 @@ class _isimIleAramaState extends State<isimIleArama> {
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 20),
                       decoration: InputDecoration(
-                        labelText: 'İL İSMİ GİRİNİZ',
+                        labelText: 'KUAFÖR İSMİ GİRİNİZ',
                         contentPadding:
                             const EdgeInsets.symmetric(vertical: 10.0),
-                        hintText: 'İL İSMİ GİRİNİZ',
-                        prefixIcon: Icon(Icons.add_location_sharp),
-                        border: OutlineInputBorder(
-                            borderSide:
-                                BorderSide(width: 1, color: Colors.blueAccent),
-                            borderRadius: const BorderRadius.all(
-                                const Radius.circular(10.0))),
-                      ),
-                    ),
-                    SizedBox(height: 15),
-                    TextField(
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20),
-                      decoration: InputDecoration(
-                        labelText: 'İLÇE İSMİ GİRİNİZ',
-                        contentPadding:
-                            const EdgeInsets.symmetric(vertical: 10.0),
-                        hintText: 'İLÇE İSMİ GİRİNİZ',
-                        prefixIcon: Icon(Icons.add_location_sharp),
-                        border: OutlineInputBorder(
-                            borderSide:
-                                BorderSide(width: 1, color: Colors.blueAccent),
-                            borderRadius: const BorderRadius.all(
-                                const Radius.circular(10.0))),
-                      ),
-                    ),
-                    SizedBox(height: 15),
-                    TextField(
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 20),
-                      decoration: InputDecoration(
-                        labelText: 'MAHALLE İSMİ GİRİNİZ',
-                        contentPadding:
-                            const EdgeInsets.symmetric(vertical: 10.0),
-                        hintText: 'MAHALLE İSMİ GİRİNİZ',
+                        hintText: 'KUAFÖR İSMİ',
                         prefixIcon: Icon(Icons.add_location_sharp),
                         border: OutlineInputBorder(
                             borderSide:

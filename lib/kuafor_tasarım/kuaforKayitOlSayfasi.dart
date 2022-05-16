@@ -47,6 +47,22 @@ class _KKayitOlSayfasiState extends State<KKayitOlSayfasi> {
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 25),
                       decoration: InputDecoration(
+                        hintText: 'Mail Adresi',
+                        isDense: true,
+                        contentPadding: EdgeInsets.all(8),
+                        prefixIcon: Icon(Icons.mail),
+                        border: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(width: 1, color: Colors.black),
+                            borderRadius: const BorderRadius.all(
+                                const Radius.circular(10.0))),
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    TextField(
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 25),
+                      decoration: InputDecoration(
                         isDense: true,
                         contentPadding: EdgeInsets.all(8),
                         hintText: ' 05** *** ** **',
